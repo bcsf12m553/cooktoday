@@ -7,10 +7,47 @@
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
-<body>
-    @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @RenderSection("scripts", required: false)
+
+<body>
+
+    <div class="wrap">
+        <!---start-top-header---->
+        <div class="top-header-contact-info">
+            <p>TOLL-FREE :</p>
+            <span>1 800 123 1234</span>
+        </div>
+        <div class="top-header-social">
+            <ul>
+                <li><a href="#"><img src="~/images/facebook.png" title="facebook" /></a></li>
+                <li><a href="#"><img src="~/images/twitter.png" title="Twitter" /></a></li>
+            </ul>
+        </div>
+        <div class="clear"> </div>
+        <!---End-top-header---->
+        <!---start-main---->
+        <div class="main">
+            <!---start-header---->
+
+
+            <div class="top-header">
+                <div class="top-nav">
+                    <ul>
+                        <li><a href="~/Home/index">Home</a></li>
+                        <li class="active"><a href="~/Home/about">About</a></li>
+                        <li><a href="~/Home/newrecipes">New Ricipes</a></li>
+                        <li><a href="~/Home/products">Products</a></li>
+                        <li><a href="~/Home/news">News</a></li>
+                        <li><a href="~/Home/contact">Contact</a></li>
+                        <div class="clear"> </div>
+
+                    </ul>
+                </div>
+            </div>
+
+            @RenderBody()
+
+            @Scripts.Render("~/bundles/jquery")
+            @RenderSection("scripts", required: false)
 </body>
 </html>
